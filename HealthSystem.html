@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health System</title>
+    <link rel="stylesheet" href="CSS/simple-grid.css">
+    <link rel="icon" type="image/x-icon" href="IMAGES/USEC_Emblem.jpg">
+    <style>
+        .circle{
+            width:20%;
+            border-radius:50%;
+            background: linear-gradient(135deg, rgba(213,212,212,1) 32%, rgba(70,68,68,1) 99%);
+            line-height:0;
+            position:relative;
+            box-shadow: inset -8px -7px 4px 0px rgba(0,0,0,0.3);
+        }
+        .circle::after{
+            content:"";
+            display:block;
+            padding-bottom:100%;
+        }
+        .circle .txt{
+        position:absolute;
+        bottom:35%;
+        width:100%;
+        text-align: center;
+        font-weight:700;
+        }
+         p strong span{
+	    --b: .5em; /* border width */
+	    --c: 1.8em; /* corner size */
+	    --r: 2em; /* corner rounding */
+	    position: relative;
+	    margin: 1em auto;
+	    border: solid var(--b) transparent;
+	    padding: 1em;
+	    max-width: 23em;
+	    font-size:25px;
+         }
+        p strong span::before {
+		position: absolute;
+		z-index: -1;
+		inset: calc(-1*var(--b));
+		border: inherit;
+		border-radius: var(--r);
+		background: linear-gradient(orange, deeppink, purple) border-box;
+		--corner: 
+			conic-gradient(from -90deg at var(--c) var(--c), red 25%, #0000 0) 
+				0 0/ calc(100% - var(--c))  calc(100% - var(--c)) border-box;
+		
+		-webkit-mask: var(--corner), var(--inner);
+		-webkit-mask-composite: source-out;
+						mask: var(--corner) subtract, var(--inner);
+		content: ''
+	}
+         
+
+
+
+        
+    </style>
+</head>
+<body style="background-image:url(IMAGES/healing.png); background-position: center;">
+   
+        <input type="checkbox" id="active">
+        <label for="active" class="menu-btn"><span></span></label>
+        <label for="active" class="close"></label>
+        <div class="wrapper">
+          <ul style="margin-top:-120px;">
+      <li><a href="index.html">Homepage</a></li>
+      <li><a href="CombatGroups.html">Combat Groups</a></li>
+      <li><a href="HealthSystem.html">Health System</a></li>
+      <li><a href="Gear.html">Gear</a></li>
+      <li><a href="Ballistics.html">Ballistics</a></li>
+      <li><a href="Hideout.html">Hideout</a></li>
+      <li><a href="Skills.html">Skills</a></li>
+      <li><a href="Traders.html">Traders</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+      </ul>
+      </div>
+    <div class="container" >
+        <div class="row" >
+            <div class="col-12" >
+                <h1 class="center" style="position:relative;left:10px;bottom:10px;" ><strong style="color:red;">Health System</strong></h1>
+                
+                   <p style="position:relative;right:350px; top:20px;"><strong><span style="color:white;">General Information</span></strong></p>
+                   
+                   
+                  
+                <div class="circle" style="width:26.2%;position:relative;right:60px;top:40px;">
+                    <div class="txt">PMCs and Scavs have 440 total health. Such is not the case when it comes to ex-PMCs, Cultists, or bosses.</div>
+                </div>
+                <div class="circle" style="width:33%;position:relative;right:90px;top:50px;">
+                    <div class="txt" style="bottom:35%;">When you are hit on one limb, your total health goes down, however not all other limbs are not damaged, except for special cases (which will be explained)</div>
+                </div>
+ 
+                <img src="IMAGES/Health.png" alt="A picture of the health in a player." width="400" style="margin-top:-1000px;position:relative;right:450px; top:20px;">
+                <div class="circle" style="width:29%;margin-top:-1000px;position:relative;top:1010px;right:250px;">
+                    <div class="txt" style="bottom:32%;">You only die if you get shot and your thorax or head's health reaches 0. You can get shot on the rest of your body parts and live.</div>
+                </div>
+              
+                <p style="position: relative; top:145px; left:900px; margin-right:500px;"><strong><span style="color:white">Part Specific Status Effects</span></strong></p>
+                
+                <p style=" width:50%; margin-bottom:200px; position:relative;top:110px;left:260px;"><strong><span style="color:white;">Basic Temporary Status Effects</span></strong></p>
+                
+                <img src="IMAGES/Char_head_chest.webp" alt="A picture depicting the thorax and head area." width="100" style="margin-top:-1000px;position:relative;top:100px;left:200px;">
+                <img src="IMAGES/Char_stomach.webp" alt="A picture depicting the Stomach area." width="100" style=" margin-top:-1000px;position:relative;top:250px;left:100px; ">
+                <img src="IMAGES/Char_Left_Arm.webp" alt="A picture depicting the Left arm area." width="100" style="margin-top:-1000px; position:relative;top: 410px;">
+                <img src="IMAGES/Char_right_arm.webp" alt="A picture depicting the Right arm area." width="100" style=" margin-top:-1000px;position:relative;top:565px;right:110px;">
+                <img src="IMAGES/Char_legs.webp" alt="A picture depicting the Legs area." width="100" style="margin-top:-1000px;position:relative;top:720px;right: 220px;">
+                
+                
+                <div class="outer">
+                    <div class="inner" ></div>
+                    </div>
+                    
+                <p style=" width:50%; line-height:normal;position:relative;bottom:40px;left:80px;" class="center"><span style="background-color: white; box-shadow: 3px 3px 2px 1px;"><b>Thorax/Head: Cannot be fractured. Cannot be fixed with a Surgical kit if their HP reach Zero. If their HP reach zero, you die. Note: if they zero out by bleeding, you will not die, but any further damage will kill you. </b></span></p>
+                <p style=" width:55%; line-height:normal;position:relative;left:80px;" class="center"> <span style="background-color: white; box-shadow: 3px 3px 2px 1px;"><b>Stomach: Cannot be fractured. When destroyed, increases hydration and energy loss.</b></span></p>
+                <p style="width:55%; line-height:normal;position:relative;top:260px;left:90px;" class="center"><span style="background-color: white; box-shadow: 3px 3px 2px 1px;"><b>Right arm: When Fractured/Destroyed, Using items and searching containers is slower. Reloading, drawing and aiming weapons is even slower.</b></span></p>
+                <p style=" width:55%; line-height:normal;position:relative;top:20px;left:100px;" class="center"><span style="background-color: white; box-shadow: 3px 3px 2px 1px;"><b>Left arm: When Fractured/Destroyed, Reloading, Drawing and aiming weapons is slower. Using items and searching containers is even slower.</b></span></p>
+                <p style=" width:55%; line-height:normal;position:relative;top:250px;left:80px;" class="center"><span style="background-color: white; box-shadow: 3px 3px 2px 1px;"><b>Legs: When Fractured/Destroyed, Each leg reduces your speed by 45%. Also decreases jump height, and you take damage to the leg that is Fractured when you sprint. If the leg is destroyed, it will share the damage to the rest of the limbs instead.</b></span></p>
+                <p style=" width:55%; line-height:normal;position:relative;left:600px;bottom:465px;" class="center"><span style="background-color: white; box-shadow: 3px 3px 2px 1px;"><b>Light Bleeding</b></span></p>
+                <p style=" width:55%; line-height:normal;position:relative;left:600px;bottom:440px;" class="center"><span style="background-color: white; box-shadow: 3px 3px 2px 1px;"><b>Heavy Bleeding</b></span></p>
+                <p style=" width:55%; line-height:normal;position:relative;left:600px;bottom:415px;" class="center"><span style="background-color: white; box-shadow: 3px 3px 2px 1px;"><b>Fracture</b></span></p>
+                <p style=" width:55%; line-height:normal;position:relative;left:600px;bottom:390px;" class="center"><span style="background-color: white; box-shadow: 3px 3px 2px 1px;"><b>Poisoning</b></span></p>
+                <p style=" width:55%; line-height:normal;position:relative;left:600px;bottom:370px;" class="center"><span style="background-color: white; box-shadow: 3px 3px 2px 1px;"><b>On Painkillers</b></span></p>
+                <p style=" width:55%; line-height:normal;position:relative;left:600px;bottom:350px;" class="center"><span style="background-color: white; box-shadow: 3px 3px 2px 1px;"><b>Pain</b></span></p>
+                <p style=" width:55%; line-height:normal;position:relative;left:600px;bottom:328px;" class="center"><span style="background-color: white; box-shadow: 3px 3px 2px 1px;"><b>Fresh Wound</b></span></p>
+                <p style=" width:55%; line-height:normal;position:relative;left:600px;bottom:300px;" class="center"><span style="background-color: white; box-shadow: 3px 3px 2px 1px;"><b>Overweight</b></span></p>
+                <p style=" width:55%; line-height:normal;position:relative;left:610px;bottom:280px;" class="center"><span style="background-color: white; box-shadow: 3px 3px 2px 1px;"><b>Critically Overweight</b></span></p>
+                <p style=" width:55%; line-height:normal;position:relative;left:600px;bottom:258px;" class="center"><span style="background-color: white; box-shadow: 3px 3px 2px 1px;"><b>Dehydration</b></span></p>
+                <p style=" width:55%; line-height:normal;position:relative;left:600px;bottom:235px;" class="center"><span style="background-color: white; box-shadow: 3px 3px 2px 1px;"><b>Fatigue</b></span></p>
+            </div>
+            <img src="IMAGES/Bleeding.webp" alt="Light bleeding icon" width="45" style="position:relative; bottom:750px;left:950px;margin-top:-50px;">
+            <img src="IMAGES/HeavyBleeding.webp" alt="Heavy Bleeding icon" style="position:relative; bottom:700px;left:902px;margin-top:-50px;">
+            <img src="IMAGES/Fracture.webp" alt="Fracture icon" style="position:relative; bottom:650px;left:853px;margin-top:-50px;">
+            <img src="IMAGES/Toxin-icon.webp" alt="Poisoning icon" width="45" style="position:relative; bottom: 600px;left:805px;margin-top:-50px;">
+            <img src="IMAGES/On_Painkillers.webp" alt="On Painkillers icon" style="position:relative; bottom:550px;left:757px;margin-top:-50px;">
+            <img src="IMAGES/Pain.webp" alt="Pain icon" style="position:relative; bottom:500px;left:708px;margin-top:-50px;">
+            <img src="IMAGES/Fresh_Wound.webp" alt="Fresh Wound icon" style="position:relative; bottom:450px;left:657px;margin-top:-50px;">
+            <img src="IMAGES/Overweight.12.4.webp" alt="Overweight icon" width="45" style="position:relative; bottom:400px;left:609px;margin-top:-50px;">
+            <img src="IMAGES/CriticleOverweight.12.4.webp" alt="Critically Overweight icon" width="45" style="position:relative; left:561px;bottom:350px;margin-top:-50px;">
+            <img src="IMAGES/Dehydration.webp" alt="Dehydration icon" style="position:relative; bottom:300px;left:513px;margin-top:-50px;">
+            <img src="IMAGES/Exhaustion.webp" alt="Fatigue icon" style="position:relative; bottom:250px;left:464px;margin-top:-50px;">
+        </div>
+       
+    </div>
+  
+   
+ 
+    
+</body>
+</html>

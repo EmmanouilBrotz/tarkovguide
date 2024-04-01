@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ballistics</title>
+    <link rel="stylesheet" href="CSS/simple-grid.css">
+    <link rel="icon" type="image/x-icon" href="IMAGES/USEC_Emblem.jpg">
+ 
+</head>
+<body style="background-color: #000000;
+background-image:  radial-gradient(#ffffff 1.7000000000000002px, transparent 1.7000000000000002px), radial-gradient(#ffffff 1.7000000000000002px, #000000 1.7000000000000002px);
+background-size: 68px 68px;
+background-position: 0 0,34px 34px;">
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><span></span></label>
+    <label for="active" class="close"></label>
+    <div class="wrapper">
+      <ul style="margin-top:-120px;">
+  <li><a href="index.html">Homepage</a></li>
+  <li><a href="CombatGroups.html">Combat Groups</a></li>
+  <li><a href="HealthSystem.html">Health System</a></li>
+  <li><a href="Gear.html">Gear</a></li>
+  <li><a href="Ballistics.html">Ballistics</a></li>
+  <li><a href="Hideout.html">Hideout</a></li>
+  <li><a href="Skills.html">Skills</a></li>
+  <li><a href="Traders.html">Traders</a></li>
+  <li><a href="Contact.html">Contact</a></li>
+  </ul>
+  </div>
+    <div class="container" >
+        <div class="row" >
+            <div class="col-12"  >
+                <h1 class="center" ><strong style="color:white;">Ballistics</strong></h1>
+            </div>
+        </div>
+    </div>
+    <div class="container-gear" style="margin-top:1%;width:90%;margin-left:auto;margin-right:auto; background-color:rgba(245, 243, 243, 0.425);border-radius:100px;padding-bottom:10px; box-shadow: rgba(255, 255, 255, 0.301) 2px 2px 4px 2px;position:relative;">
+        <p style="margin-left:100px;text-align:justify;line-height: 1%;position:relative;top:15px;margin-right:4%;white-space:pre-line;font-weight:500;">
+          <span style="color:white;">
+            If you want to succeed in Tarkov, you must be able to understand its ballistics.
+      
+            Firstly, You must know the different classes of Armor. There are 6 classes in total, from class 1 to class 6 armor, class 1 being the worst and class 6 being the best. There are barely any class 6 armors available, most of them simply found in raid. Class 5 and 4 are more available, however they do not offer the same ballistic protection. 
+            You may think, "Class 4 and 5 are very close to class 6, why are they not as useful as it?". And I come to answer the question by saying, Armor Penetrating ammo exists in the game. 
+            There are various of different types of rounds in Tarkov, some of which are simply there to deliver flesh damage with no penetration power, others have more penetration power and less flesh damage, others somewhere in the middle. A lot of widely-used ammunition is actually able to penetrate class 4 armor very easily. Class 5 not as much, but there's still quite the difference between the 2.
+      
+            When it comes to ammunition, there are a LOT of calibers, and a LOT of different types of ammunition per caliber. Usually, you are able to acquire decent ammo for every caliber, some purely Armor Penetrating rounds are only attained through crafting or found in raid. Here's some of the more available ammunition, their caliber, their flesh damage, armor penetration values, and projectile speeds.
+            </span></p>
+          
+            <br>
+            <div class="table-container">
+              <table class="responsive-table" style="border-radius:80px;">
+                <thead>
+                  <tr>
+                    <th>Ammunition</th>
+                    <th>Caliber</th>
+                    <th>Flesh Damage</th>
+                    <th>Armor Penetration</th>
+                    <th>Projectile Speed</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>M855</td>
+                    <td>5.56x45</td>
+                    <td>53</td>
+                    <td>30</td>
+                    <td>922 m/s</td>
+                  </tr>
+                  <tr>
+                    <td>M856A1</td>
+                    <td>5.56x45</td>
+                    <td>54</td>
+                    <td>37</td>
+                    <td>940 m/s</td>
+                  </tr>
+                  <tr>
+                    <td>M855A1</td>
+                    <td>5.56x45</td>
+                    <td>49</td>
+                    <td>44</td>
+                    <td>945 m/s</td>
+                  </tr>
+                  <tr>
+                    <td>M80</td>
+                    <td>7.62x51 NATO</td>
+                    <td>80</td>
+                    <td>41</td>
+                    <td>833 m/s</td>
+                  </tr>
+                  <tr>
+                    <td>M62</td>
+                    <td>7.62x51 NATO</td>
+                    <td>79</td>
+                    <td>44</td>
+                    <td>816 m/s</td>
+                  </tr>
+                  <tr>
+                    <td>PS</td>
+                    <td>7.62x39</td>
+                    <td>57</td>
+                    <td>35</td>
+                    <td>700 m/s</td>
+                  </tr>
+                  <tr>
+                    <td>BP</td>
+                    <td>7.62x39</td>
+                    <td>58</td>
+                    <td>47</td>
+                    <td>730 m/s</td>
+                  </tr>
+                  <tr>
+                    <td>AP 6.3</td>
+                    <td>9x19</td>
+                    <td>52</td>
+                    <td>30</td>
+                    <td>392 m/s</td>
+                  </tr>
+                  <tr>
+                    <td>.45 AP</td>
+                    <td>.45 ACP</td>
+                    <td>66</td>
+                    <td>38</td>
+                    <td>299 m/s</td>
+                  </tr>
+                  <tr>
+                    <td>FMJ SX</td>
+                    <td>4.6x30 HK</td>
+                    <td>43</td>
+                    <td>40</td>
+                    <td>620 m/s</td>
+                  </tr>
+                  <tr>
+                    <td>BP</td>
+                    <td>5.45x39</td>
+                    <td>45</td>
+                    <td>37</td>
+                    <td>890 m/s</td>
+                  </tr>
+                  <tr>
+                    <td>BT</td>
+                    <td>5.45x39</td>
+                    <td>42</td>
+                    <td>42</td>
+                    <td>880 m/s</td>
+                  </tr>
+                  <tr>
+                    <td>BS</td>
+                    <td>5.45x39</td>
+                    <td>40</td>
+                    <td>52</td>
+                    <td>830 m/s</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            
+            </div>
+          
+       
+      </div>
+      
+
+     
+</body>
+</html>
